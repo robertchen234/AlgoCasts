@@ -18,6 +18,12 @@ function palindrome(str) {
   return reverse(str) === str ? true : false;
 }
 
+// function palindrome(str) {
+//   return str.split("").every((char, i) => {
+//     return char === str[str.length - i - 1];
+//   });
+// }
+
 // palindrome("aba");
 
 module.exports = palindrome;
