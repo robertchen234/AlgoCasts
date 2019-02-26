@@ -14,21 +14,27 @@ function reverse(str) {
     .reduce((reversed, character) => character + reversed, "");
 }
 
+// function reverseInt(n) {
+//   let isNegative = false
+
+//   if (n < 0) {
+//     isNegative = true
+//   }
+
+//   let str = n.toString()
+//   let revNum = parseInt(reverse(str))
+
+//   if (isNegative) {
+//      return revNum * -1;
+//   } else {
+//     return revNum
+//   }
+// }
+
 function reverseInt(n) {
-  let isNegative = false
-
-  if (n < 0) {
-    isNegative = true
-  }
-
-  let str = n.toString()
-  let revNum = parseInt(reverse(str))
-
-  if (isNegative) {
-     return revNum * -1;
-  } else {
-    return revNum
-  }
+  let num = n.toString();
+  let revNum = parseInt(reverse(num));
+  return Math.sign(n) * revNum;
 }
 
 module.exports = reverseInt;
