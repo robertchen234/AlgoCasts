@@ -17,7 +17,7 @@ function palindrome(str) {
   // debugger;
   return reverse(str) === str ? true : false;
 }
-
+``
 // function palindrome(str) {
 //   return str.split("").every((char, i) => {
 //     return char === str[str.length - i - 1];
