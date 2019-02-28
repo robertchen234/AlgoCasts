@@ -13,13 +13,9 @@
 function reverse(str) {
   let rev = "";
   for (let char of str) {
-    debugger
     rev = char + rev;
   }
-  debugger
   return rev;
 }
-
-reverse("abcde");
 
 module.exports = reverse;

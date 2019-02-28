@@ -14,6 +14,12 @@ function reverse(str) {
     .reduce((reversed, character) => character + reversed, "");
 }
 
+function reverseInt(n) {
+  let num = n.toString();
+  let revNum = parseInt(reverse(num));
+  return Math.sign(n) * revNum;
+}
+
 // function reverseInt(n) {
 //   let isNegative = false
 
@@ -30,11 +36,5 @@ function reverse(str) {
 //     return revNum
 //   }
 // }
-
-function reverseInt(n) {
-  let num = n.toString();
-  let revNum = parseInt(reverse(num));
-  return Math.sign(n) * revNum;
-}
 
 module.exports = reverseInt;
